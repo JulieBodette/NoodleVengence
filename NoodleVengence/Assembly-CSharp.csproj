@@ -47,6 +47,9 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Code\Dissapearonbuttonpress.cs" />
+     <Compile Include="Assets\Code\ObjectPool.cs" />
+     <Compile Include="Assets\Code\PooledObject.cs" />
+     <Compile Include="Assets\Code\StuffSpawner.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
