@@ -108,7 +108,7 @@ MonoBehaviour:
   m_MinSize: {x: 583, y: 495}
   m_MaxSize: {x: 14004, y: 14045}
   vertical: 1
-  controlID: 5513
+  controlID: 5826
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -132,7 +132,7 @@ MonoBehaviour:
   m_MinSize: {x: 583, y: 495}
   m_MaxSize: {x: 14004, y: 14045}
   vertical: 0
-  controlID: 5514
+  controlID: 5827
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -156,7 +156,7 @@ MonoBehaviour:
   m_MinSize: {x: 306, y: 495}
   m_MaxSize: {x: 10002, y: 14045}
   vertical: 1
-  controlID: 5515
+  controlID: 5864
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -180,7 +180,7 @@ MonoBehaviour:
   m_MinSize: {x: 306, y: 224}
   m_MaxSize: {x: 8006, y: 4024}
   vertical: 0
-  controlID: 5516
+  controlID: 5865
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -390,9 +390,9 @@ MonoBehaviour:
     height: 343
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 68d2ffff
-    m_LastClickedID: -11672
-    m_ExpandedIDs: e0fbffff00000000
+    m_SelectedIDs: 9ecbffff
+    m_LastClickedID: -13410
+    m_ExpandedIDs: d6c7ffffe0fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -627,19 +627,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Code
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 52
   m_LastFolders:
-  - Assets/Code
+  - Assets
   m_LastFoldersGridSize: 52
   m_LastProjectPath: C:\Users\Julie\Documents\GitHub\NoodleVengence\NoodleVengence
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: f8240000
-    m_LastClickedID: 9464
-    m_ExpandedIDs: 00000000b22400002825000000ca9a3bffffff7f
+    m_SelectedIDs: b8240000
+    m_LastClickedID: 9400
+    m_ExpandedIDs: 00000000b82400003425000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -667,7 +667,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000b22400002825000000ca9a3bffffff7f
+    m_ExpandedIDs: 00000000b82400003425000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

@@ -20,8 +20,8 @@ public class StuffSpawner : MonoBehaviour {
 
 		void SpawnStuff () {
 		Dissapearonbuttonpress prefab = stuffPrefabs[Random.Range(0, stuffPrefabs.Length)];
-		//Dissapearonbuttonpress spawn = Instantiate<Dissapearonbuttonpress>(prefab);
-		Dissapearonbuttonpress spawn = prefab.GetPooledInstance<Dissapearonbuttonpress>();
+		Dissapearonbuttonpress spawn = Instantiate<Dissapearonbuttonpress>(prefab);
+		//Dissapearonbuttonpress spawn = prefab.GetPooledInstance<Dissapearonbuttonpress>();
 		spawn.transform.localPosition = transform.position;
 		}
 	}

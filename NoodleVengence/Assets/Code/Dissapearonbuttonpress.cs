@@ -6,11 +6,13 @@ using UnityEngine;
 public class Dissapearonbuttonpress : PooledObject {
 
 	public string letter;
+	public Vector2 v;
 	public Rigidbody2D Body { get; private set; }
 
 
 	void Awake () {
 		Body = GetComponent<Rigidbody2D>();
+		Body.velocity = v;
 	}
 	
 	// Update is called once per frame
@@ -21,37 +23,41 @@ public class Dissapearonbuttonpress : PooledObject {
 			if (Input.GetKeyDown (KeyCode.H)) 
 			{
 				Debug.Log ("pressed H");
-				ReturnToPool ();
+				//ReturnToPool ();
+				Destroy(gameObject);
 			}
 		}else if (letter == "j")
 		{
 			if (Input.GetKeyDown (KeyCode.J)) 
 			{
 				Debug.Log ("pressed J");
-				ReturnToPool ();
+				//ReturnToPool ();
+				Destroy(gameObject);
 			}
 		}else if (letter == "k")
 		{
 			if (Input.GetKeyDown (KeyCode.K)) 
 			{
 				Debug.Log ("pressed K");
-				ReturnToPool ();
+				//ReturnToPool ();
+				Destroy(gameObject);
 			}
 		} else if (letter == "l")
 		{
 			if (Input.GetKeyDown (KeyCode.L)) 
 			{
 				Debug.Log ("pressed L");
-				ReturnToPool ();
+				//ReturnToPool ();
+				Destroy(gameObject);
 			}
 		}
 	}
-
+	/*
 	void OnTriggerEnter (Collider enteredCollider) {
 		if (enteredCollider.CompareTag("Kill Zone")) {
 			//ReturnToPool ();
 			Destroy(gameObject);
 
 		}
-	}
+	}*/
 }
