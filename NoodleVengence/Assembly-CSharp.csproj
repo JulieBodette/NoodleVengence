@@ -47,8 +47,10 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Code\Dissapearonbuttonpress.cs" />
+     <Compile Include="Assets\Code\LoadScene.cs" />
      <Compile Include="Assets\Code\ObjectPool.cs" />
      <Compile Include="Assets\Code\PooledObject.cs" />
+     <Compile Include="Assets\Code\QuitonClick.cs" />
      <Compile Include="Assets\Code\StuffSpawner.cs" />
      <Compile Include="Assets\GrabZone.cs" />
      <Compile Include="Assets\KillZone.cs" />
