@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
-public class Dissapearonbuttonpress : PooledObject {
+public class Dissapearonbuttonpress : MonoBehaviour {
 
 	public string letter;
 	public Vector2 v;
@@ -14,16 +14,15 @@ public class Dissapearonbuttonpress : PooledObject {
 		Body = GetComponent<Rigidbody2D>();
 		Body.velocity = v;
 	}
-	
-	// Update is called once per frame
-	void Update ()
+
+	void CheckKeyPress()
 	{
 		if (letter == "h")
 		{
 			if (Input.GetKeyDown (KeyCode.H)) 
 			{
 				Debug.Log ("pressed H");
-				//ReturnToPool ();
+				GameObject.FindObjectOfType<retaindata>().increaseScore (1); 
 				Destroy(gameObject);
 			}
 		}else if (letter == "j")
@@ -31,7 +30,7 @@ public class Dissapearonbuttonpress : PooledObject {
 			if (Input.GetKeyDown (KeyCode.J)) 
 			{
 				Debug.Log ("pressed J");
-				//ReturnToPool ();
+				GameObject.FindObjectOfType<retaindata>().increaseScore (1); 
 				Destroy(gameObject);
 			}
 		}else if (letter == "k")
@@ -39,7 +38,7 @@ public class Dissapearonbuttonpress : PooledObject {
 			if (Input.GetKeyDown (KeyCode.K)) 
 			{
 				Debug.Log ("pressed K");
-				//ReturnToPool ();
+				GameObject.FindObjectOfType<retaindata>().increaseScore (1); 
 				Destroy(gameObject);
 			}
 		} else if (letter == "l")
@@ -47,9 +46,20 @@ public class Dissapearonbuttonpress : PooledObject {
 			if (Input.GetKeyDown (KeyCode.L)) 
 			{
 				Debug.Log ("pressed L");
-				//ReturnToPool ();
+				GameObject.FindObjectOfType<retaindata>().increaseScore (1); 
 				Destroy(gameObject);
 			}
+		}
+	}
+
+	void OnTriggerStay2D(Collider2D other)
+	{
+
+		if (other.tag == "Grab Zone") {
+			CheckKeyPress (); //check to see if player is pressing correct key to pick noodle up
+			//add chopsticks animation here
+		} else if (other.tag == "Kill Zone") {
+			Debug.Log ("Dropped a noodle!! oh noes");
 		}
 	}
 	/*

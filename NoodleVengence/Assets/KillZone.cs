@@ -9,5 +9,6 @@ public class KillZone : MonoBehaviour {
 		//later do the object pool thingy
 		Destroy(other.gameObject);
 		Debug.Log ("object destroyed in kill zone");
+		GameObject.FindObjectOfType<retaindata>().decreaseLives(1); 
 	}
 }
