@@ -14,6 +14,10 @@ public class Dissapearonbuttonpress : MonoBehaviour {
 		Body = GetComponent<Rigidbody2D>();
 		Body.velocity = v;
 	}
+	public void setVelocity(Vector2 newVelocity)
+	{
+		Body.velocity = newVelocity;
+	}
 
 	void CheckKeyPress()
 	{
@@ -21,7 +25,6 @@ public class Dissapearonbuttonpress : MonoBehaviour {
 		{
 			if (Input.GetKeyDown (KeyCode.H)) 
 			{
-				Debug.Log ("pressed H");
 				GameObject.FindObjectOfType<retaindata>().increaseScore (1); 
 				Destroy(gameObject);
 			}
@@ -29,7 +32,6 @@ public class Dissapearonbuttonpress : MonoBehaviour {
 		{
 			if (Input.GetKeyDown (KeyCode.J)) 
 			{
-				Debug.Log ("pressed J");
 				GameObject.FindObjectOfType<retaindata>().increaseScore (1); 
 				Destroy(gameObject);
 			}
@@ -37,15 +39,21 @@ public class Dissapearonbuttonpress : MonoBehaviour {
 		{
 			if (Input.GetKeyDown (KeyCode.K)) 
 			{
-				Debug.Log ("pressed K");
 				GameObject.FindObjectOfType<retaindata>().increaseScore (1); 
 				Destroy(gameObject);
 			}
-		} else if (letter == "l")
+		}else if (letter == "l")
 		{
 			if (Input.GetKeyDown (KeyCode.L)) 
 			{
-				Debug.Log ("pressed L");
+				GameObject.FindObjectOfType<retaindata>().increaseScore (1); 
+				Destroy(gameObject);
+			}
+		} 
+		else if (letter == ";")
+		{
+			if (Input.GetKeyDown (KeyCode.Semicolon)) 
+			{
 				GameObject.FindObjectOfType<retaindata>().increaseScore (1); 
 				Destroy(gameObject);
 			}
